@@ -1,0 +1,2 @@
+{"update_id":233036440,
+"message":{"message_id":10,"from":{"id":180739557,"is_bot":false,"first_name":"Daniel","last_name":"L\u00f3pez","username":"Kododo","language_code":"es"},"chat":{"id":180739557,"first_name":"Daniel","last_name":"L\u00f3pez","username":"Kododo","type":"private"},"date":1519330128,"text":"que tal"}}
