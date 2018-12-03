@@ -29,4 +29,8 @@ class Bot{
         return $this->inline($query);
     }
 
+    public function deleteInvokingMessage($update){
+        $this->getClient()->deleteMessage($update->getChatId(), $update->getMessageId());
+    }
+
 }

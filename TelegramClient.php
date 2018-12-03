@@ -3,6 +3,9 @@
 include_once("Update.php");
 include_once("Bot.php");
 include_once("InlineQuery.php");
+include_once("TestBot.php");
+include_once("Logger.php");
+include_once("InlineQueryResultGif.php");
 
 
 class TelegramClient{
@@ -40,6 +43,18 @@ class TelegramClient{
         $this->_makeRequest('sendPhoto',array(
             "chat_id" => $chatId,
             "photo" => $photo
+        ));
+    }
+    public function sendAnimation($chatId, $animation){
+        $this->_makeRequest('sendAnimation',array(
+            "chat_id" => $chatId,
+            "animation" => $animation
+        ));
+    }
+    public function deleteMessage($chatId, $messageId){
+        $this->_makeRequest('deleteMessage',array(
+            "chat_id" => $chatId,
+            "message_id" => $messageId
         ));
     }
     public function answerInlineQuery($queryId, $results){
